@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ambient Sound Mixer</title>
+  <!-- Font Awesome for icons -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-p1Cm5XK+9uhgprvOmdZy9jM6u6G3QF0eXFXwO8YnIuG6nIpbF8qL1mH4p2hz6WEKG5Sm1bk1rs3u+0hK6C/aKA=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <h1 class="site-header__title">Ambient Sound Mixer</h1>
+    <h3 class="site-header__subtitle">Mix your perfect ambient soundscape</h3>
+  </header>
+
+  <button type="button" class="play-all">
+    <i class="fas fa-play"></i>
+    play all
+  </button>
+
+  <main class="sound-grid">
+    <button type="button" class="sound-button">
+      <div class="sound-button__header">
+        <span class="sound-button__title">Rain</span>
+        <span class="sound-button__icon"><i class="fas fa-cloud-showers-heavy"></i></span>
+      </div>
+      <input type="range" class="sound-button__slider" min="0" max="100" value="50" aria-label="Rain volume">
+    </button>
+
+    <button type="button" class="sound-button">
+      <div class="sound-button__header">
+        <span class="sound-button__title">Waves</span>
+        <span class="sound-button__icon"><i class="fas fa-water"></i></span>
+      </div>
+      <input type="range" class="sound-button__slider" min="0" max="100" value="50" aria-label="Waves volume">
+    </button>
+
+    <button type="button" class="sound-button">
+      <div class="sound-button__header">
+        <span class="sound-button__title">Forest</span>
+        <span class="sound-button__icon"><i class="fas fa-tree"></i></span>
+      </div>
+      <input type="range" class="sound-button__slider" min="0" max="100" value="50" aria-label="Forest volume">
+    </button>
+
+    <button type="button" class="sound-button">
+      <div class="sound-button__header">
+        <span class="sound-button__title">Brown Noise</span>
+        <span class="sound-button__icon"><i class="fas fa-circle-notch"></i></span>
+      </div>
+      <input type="range" class="sound-button__slider" min="0" max="100" value="50" aria-label="Brown noise volume">
+    </button>
+
+    <button type="button" class="sound-button">
+      <div class="sound-button__header">
+        <span class="sound-button__title">White Noise</span>
+        <span class="sound-button__icon"><i class="fas fa-circle"></i></span>
+      </div>
+      <input type="range" class="sound-button__slider" min="0" max="100" value="50" aria-label="White noise volume">
+    </button>
+
+    <button type="button" class="sound-button">
+      <div class="sound-button__header">
+        <span class="sound-button__title">Whale Sounds</span>
+        <span class="sound-button__icon"><i class="fas fa-water"></i></span>
+      </div>
+      <input type="range" class="sound-button__slider" min="0" max="100" value="50" aria-label="Whale sounds volume">
+    </button>
+  </main>
+</body>
+</html>
